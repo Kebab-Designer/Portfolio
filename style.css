@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'SpaceGrotesk-Variable';
+    src: url('./fonts/SpaceGrotesk-Variable.woff2') format('woff2'),
+         url('./fonts/SpaceGrotesk-Variable.woff') format('woff'),
+         url('./fonts/SpaceGrotesk-Variable.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+/* all variables */
+
+:root {
+    --primary: #121212;
+    --secondary: #fafafa;
+}
+
+.theme-invert{
+    --primary: #fafafa;
+    --secondary: #121212;
+}
+
+ /* all references */
+  
+body {
+    font-family: SpaceGrotesk-Variable;
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondary);
+    color: var(--primary);
+    position: relative;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Navigation */
+
+#Nav {
+    width: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 3em;
+    padding: 16px;
+    z-index: 2;
+
+
+    /* experimental */
+
+    /* mix-blend-mode: difference;
+    color: var(--secondary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+
+    /* experimental */
+    
+
+}
+#selected {
+    font-weight: 700;
+}
+
+.NavLeft {
+    text-align: left;
+}
+
+.NavRight {
+    text-align: right;
+}
+
+#theme-switch {
+    cursor: pointer;
+}
+
+
+
+/* Main */
+
+
+.lable {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.splashscreen {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    padding:16px;
+    padding-bottom: 0px;
+}
+
+#IMD {
+    align-self: flex-end;
+    font-size: 7.5vw;
+    break-after: avoid;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+/* About Page */
+
+.About {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    padding-top: 20em;
+}
+
+.aboutportrait {
+    max-height: 50vh;
+    width: 100%;
+}
+
+#Aboutinfo {
+    width: auto;
+    display:grid;
+    padding: 16px;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 3em;
+}
+
+#aboutsection {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.itemul {
+    margin: 0;
+}
+
+.itemtitle {
+    font-weight: 700;
+    margin: 0;
+}
+
+.itemduration {
+    font-weight: 300;
+    opacity: 60%;
+    margin-top: 2px;
+}
+
+.aboutportrait {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
