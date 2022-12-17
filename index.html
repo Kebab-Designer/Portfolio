@@ -6,7 +6,7 @@
     <meta name="viewport">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./style.css"/>
-
+    <link rel="stylesheet" type="text/css" href="./cursor.css"/>
     
 </head>
 <body>
@@ -29,17 +29,30 @@
     </div>
 </header>
     <!-- End of Navigation -->
-    <!-- Github test -->
 
     <!-- Splashscreen -->
     <div class="splashscreen">
-        <p id="IMD">Interactive Media Designer</p>
+        <div class="imd-wrapper">
+            <p id="IMD">Interactive</p>
+            <p id="IMD">Media</p>
+            <p id="IMD">Designer</p>
+        </div>
     </div>
     <!-- Splashscreen -->
 
     <!-- Scripts-->
     <script src="script.js"></script>
     <!--test-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+<div class="cursor cursor--small"></div>
+<canvas class="cursor cursor--canvas" resize></canvas>
+
+<script src="cursor.js"></script>
+
 
     <!-- Scripts-->
 
