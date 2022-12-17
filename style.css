@@ -20,6 +20,33 @@
     --secondary: #121212;
 }
 
+/* Cursor stuff */
+* {
+    cursor: none !important;
+ }
+  .cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+
+  .cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 5;
+    background: var(--primary);
+  }
+
+  .cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+  }
+
  /* all references */
   
 body {
@@ -158,3 +185,53 @@ a:hover {
 
 }
 
+/* ---- Projects -----------------------*/
+
+.masonry {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-template-rows: minmax(100px, auto);
+
+    height: 100vh;
+    grid-auto-flow: dense;
+}
+
+.masonry .project-container {
+    position: inherit;
+    padding: 16px;
+    border-color: var(--primary);
+    border-style: ridge;
+    border-width: 0.5px;
+    transition: 250ms;
+}
+
+.masonry .project-container:hover {
+    background-color: lightcoral;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+}
+
+/* masonry layout*/
+.masonry .project-container:nth-child(1) {
+    grid-row: span 2;
+}
+.masonry .project-container:nth-child(2) {
+    grid-column: span 2;
+}
+.masonry .project-container:nth-child(3) {
+    grid-row: span 2;
+}
+.masonry .project-container:nth-child(4) {
+    grid-row: span 1;
+}
+.masonry .project-container:nth-child(5) {
+    grid-column: span 2;
+}
+.masonry .project-container:nth-child(6) {
+    grid-row: span 2;
+}
+/* masonry layout*/
