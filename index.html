@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css"/>
     
 </head>
-<body>
+<body data-barba="wrapper">
     <!-- Navigation -->
     <header>
     <div id="Nav">
@@ -30,6 +30,8 @@
     <!-- End of Navigation -->
 
     <!-- Splashscreen -->
+<main data-barba="container" data-barba-namespace="home"> <!--Barba changable content-->
+
     <div class="splashscreen">
         <div class="imd-wrapper">
             <p id="IMD">Interactive</p>
@@ -37,23 +39,24 @@
             <p id="IMD">Designer</p>
         </div>
     </div>
+</main>
     <!-- Splashscreen -->
 
-    <!-- Scripts-->
-    <script src="script.js"></script>
-    <!--test-->
+<!-- Scripts-->
+<!-- Imports-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="script.js"></script>
+<script src="barba.js"></script>
+    <!--cursor-->
+    <div class="cursor cursor--small"></div>
+    <canvas class="cursor cursor--canvas" resize></canvas>
+    <script src="cursor.js"></script>
+    <!--cursor-->
 
+<!--barba import-->
+    <script src="https://unpkg.com/@barba/core"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-
-<div class="cursor cursor--small"></div>
-<canvas class="cursor cursor--canvas" resize></canvas>
-
-<script src="cursor.js"></script>
-
-
-    <!-- Scripts-->
+<!-- Scripts-->
 
 </body>
 </html>

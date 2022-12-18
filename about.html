@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="./style.css"/>
     
 </head>
-<body>
-      <!-- Navigation -->
+<body data-barba="wrapper">
+    <!-- Navigation -->
     <header>
         <div id="Nav">
             <div class="NavLeft">
@@ -28,55 +28,60 @@
         </div>
     </header>
         <!-- End of Navigation -->
-        
-<div class="About">
-    <!-- <img class="aboutportrait" src="./assets/portrait.JPG" alt="Portrait of Ferdi Pinarci"> -->
-    
-    <div id="Aboutinfo">
-    <div class="aboutsection">
-        <h2 class="lable">Software</h2>
-        <p class="itemul">Blender</p>
-        <p class="itemul">Photoshop</p>
-        <p class="itemul">Figma</p>
-        <p class="itemul">Webflow</p>
-        <p class="itemul">After Effects</p>
-        <p class="itemul">Visual Code</p>
-        <p class="itemul">Magica Voxel</p>
-        <p class="itemul">Processing</p>
-    </div>
 
-    <div class="aboutsection">
-        <div class="aboutcontainer">
-            <h2 class="lable">Experience</h2>
-            <p class="itemtitle">Interactive Media Designer EFZ</p>
-            <p class="itemduration">Swisscom AG | 2018 - 2022</p>
-            <p class="itemdescription">4 year apprenticeship after my secondary school education. I led branding teams, produced marketing and social media content. Planned, led and executed website projects.</p>
-        </div>
-    </div>
-
-    <div class="aboutsection">
-        <div class="aboutcontainer">
-            <h2 class="lable">Education</h2>
-            <p class="itemtitle">BA Game Design</p>
-            <p class="itemduration">ZHdK | 2022 - Present</p>
-            <p class="itemdescription">I am currently studying Game Design at the ZHdK in Zurich Switzerland.</p>
-        </div>
-    <br>
-        <div class="aboutcontainer">
-            <p class="itemtitle">Interactive Media Designer EFZ</p>
-            <p class="itemduration">GBS St. Gallen | 2018 - 2022</p>
-            <p class="itemdescription">Part-time college during my apprenticeship where I first learned the basic design principles. In the following years I had projects in Web, Photography, Cinematography, Marketing, 3D, Ui / UX Design and Storytelling.</p>
-        </div>
-    </div>
-     <div class="aboutsection">
+<main data-barba="container" data-barba-namespace="home"> <!--Barba changable content-->
+    <div class="About">
         <!-- <img class="aboutportrait" src="./assets/portrait.JPG" alt="Portrait of Ferdi Pinarci"> -->
+        
+        <div id="Aboutinfo">
+        <div class="aboutsection">
+            <h2 class="lable">Software</h2>
+            <p class="itemul">Blender</p>
+            <p class="itemul">Photoshop</p>
+            <p class="itemul">Figma</p>
+            <p class="itemul">Webflow</p>
+            <p class="itemul">After Effects</p>
+            <p class="itemul">Visual Code</p>
+            <p class="itemul">Magica Voxel</p>
+            <p class="itemul">Processing</p>
+        </div>
+
+        <div class="aboutsection">
+            <div class="aboutcontainer">
+                <h2 class="lable">Experience</h2>
+                <p class="itemtitle">Interactive Media Designer EFZ</p>
+                <p class="itemduration">Swisscom AG | 2018 - 2022</p>
+                <p class="itemdescription">4 year apprenticeship after my secondary school education. I led branding teams, produced marketing and social media content. Planned, led and executed website projects.</p>
+            </div>
+        </div>
+
+        <div class="aboutsection">
+            <div class="aboutcontainer">
+                <h2 class="lable">Education</h2>
+                <p class="itemtitle">BA Game Design</p>
+                <p class="itemduration">ZHdK | 2022 - Present</p>
+                <p class="itemdescription">I am currently studying Game Design at the ZHdK in Zurich Switzerland.</p>
+            </div>
+        <br>
+            <div class="aboutcontainer">
+                <p class="itemtitle">Interactive Media Designer EFZ</p>
+                <p class="itemduration">GBS St. Gallen | 2018 - 2022</p>
+                <p class="itemdescription">Part-time college during my apprenticeship where I first learned the basic design principles. In the following years I had projects in Web, Photography, Cinematography, Marketing, 3D, Ui / UX Design and Storytelling.</p>
+            </div>
+        </div>
+        <div class="aboutsection">
+            <!-- <img class="aboutportrait" src="./assets/portrait.JPG" alt="Portrait of Ferdi Pinarci"> -->
+            </div>
         </div>
     </div>
-</div>
+</main>
 
     <!-- Scripts-->
+<!-- Imports-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="script.js"></script>
+<script src="barba.js"></script>
 
-    <script src="script.js"></script>
     <!--test-->
 
 
