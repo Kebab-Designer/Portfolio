@@ -71,6 +71,17 @@ a:hover {
 
 
 /* Navigation */
+
+/* Disclaimer */
+.disclaimer {
+    margin-top: 0px;
+    background-color: red;
+}
+
+.disclaimer a {
+    text-decoration: underline;
+}
+
 /*CSS GRID*/
 
 #Nav {
